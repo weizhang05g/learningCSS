@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .clearfix:after { 
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both; 
+        visibility: hidden;
+    }
+    .clearfix {
+        *zoom: 1;
+    } */
+        .clearfix:before,
+        .clearfix:after {
+            content: " ";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .other {
+            width: 120px;
+            height: 64px;
+            background-color: #eee;
+            margin-bottom: 20px;
+            border: 1px solid #cdcdcd;
+        }
+
+        .father {
+            width: 800px;
+            /* height: 340px; */
+            background-color: #ccc;
+            /* padding: 10px */
+        }
+
+        .son1 {
+            width: 300px;
+            height: 240px;
+            background-color: red;
+            float: left;
+        }
+
+        .son2 {
+            width: 210px;
+            height: 74px;
+            background-color: coral;
+            float: left;
+        }
+
+        .son3 {
+            width: 220px;
+            height: 160px;
+            background-color: crimson;
+            float: left;
+        }
+
+        .second {
+            width: 950px;
+            height: 50px;
+            background-color: #bbb;
+            margin: 15px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="other"></div>
+    <div class="father clearfix">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+
+    <div class="second"></div>
+</body>
+
+</html>
